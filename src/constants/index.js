@@ -29,15 +29,24 @@ export const navLinks = [
 
 
 export const myProjects = [
-{
-  title: "Smart Event Scheduler",
-  desc: "Smart Event Scheduler is an AI-powered full-stack scheduling and collaboration platform built using Next.js 15, Tailwind CSS, TypeScript, MongoDB, and NextAuth.js. It offers advanced calendar management with FullCalendar, real-time collaboration via Socket.IO, smart meeting suggestions, and seamless integrations with Google Maps, Zoom, and Teams. Designed for enterprises and teams, it ensures secure scheduling with RBAC and delivers actionable productivity insights.",
-  subdesc:
-    "This project enhanced scheduling efficiency by 45%, reducing meeting conflicts and boosting team collaboration through intelligent time suggestions, real-time updates, and enterprise-grade security.",
-  href: "https://github.com/SHUBHAMKUMAR45/Smart-Event-Scheduler",
-  texture: "/textures/project/Smart.mp4",
-  spotlight: "/assets/spotlight1.png",
-},
+  {
+    title: "Nyxionyx ",
+    desc: "Nyxionyx  - A dark-first, high-performance CRM dashboard built with Next.js, Tailwind, and modern UI patterns.",
+    subdesc:
+      "A complete, production-ready, dark-mode-only CRM dashboard built with Next.js 15, TypeScript, Tailwind CSS, and shadcn/ui. Features 12 fully functional pages, responsive design, rich data visualizations, and comprehensive accessibility support.",
+      href: "https://github.com/SHUBHAMKUMAR45/Nyxionyx",
+      texture: "/textures/project/nova.mp4",
+    spotlight: "/assets/spotlight1.png",
+  },
+  {
+    title: "Smart Event Scheduler",
+    desc: "Smart Event Scheduler is an AI-powered full-stack scheduling and collaboration platform built using Next.js 15, Tailwind CSS, TypeScript, MongoDB, and NextAuth.js. It offers advanced calendar management with FullCalendar, real-time collaboration via Socket.IO, smart meeting suggestions, and seamless integrations with Google Maps, Zoom, and Teams. Designed for enterprises and teams, it ensures secure scheduling with RBAC and delivers actionable productivity insights.",
+    subdesc:
+      "This project enhanced scheduling efficiency by 45%, reducing meeting conflicts and boosting team collaboration through intelligent time suggestions, real-time updates, and enterprise-grade security.",
+    href: "https://github.com/SHUBHAMKUMAR45/Smart-Event-Scheduler",
+    texture: "/textures/project/Smart.mp4",
+    spotlight: "/assets/spotlight1.png",
+  },
 
   {
     title: "Zcrum - Project Management Tool",
@@ -170,9 +179,33 @@ export const myProjects = [
 
 export const experiences = [
   {
+    title: "AI Intern (Trainee)",
+    job: "NIELIT Patna (MeitY, Govt. of India)",
+    date: "January 2026 - Present",
+    contents: [
+      "Developing and implementing Machine Learning and Deep Learning solutions using Python, Scikit-learn, and TensorFlow to solve real-world analytical challenges.",
+      "Spearheading the integration of Generative AI models (OpenAI & Google Gemini APIs) into existing full-stack architectures to enhance application intelligence.",
+      "Performing comprehensive Exploratory Data Analysis (EDA) and data preprocessing on complex datasets to improve model accuracy and reliability.",
+      "Architecting end-to-end AI pipelines, transitioning from traditional MERN development to data-driven system design and predictive modeling.",
+      "Collaborating on technical documentation and system optimization following Ministry of Electronics & IT (MeitY) standards for government-scale projects.",
+    ],
+  },
+  {
+    title: "Software Developer Engineer Intern",
+    job: "Docmize- solutions Pvt. Ltd ",
+    date: "May 2025 - December 2025",
+    contents: [
+      "Built scalable MERN applications for handling large-scale data ingestion and real-time analysis, ensuring efficient processing and storage in MongoDB.",
+      "Developed backend services with Node.js & Express.js to enable seamless client-to-server communication for data exchange and system control.",
+      " Designed and integrated secure REST APIs with JWT authentication and role-based access, ensuring reliability and compliance",
+      " Ensured data privacy for customers and partners through industry-compliant protocols.",
+      "Enhanced frontend performance in React.js by reducing load times by 35% using lazy loading, code splitting, and caching strategies.",
+    ],
+  },
+  {
     title: "Full-Stack Developer Intern",
     job: "CSS EdTech",
-    date: "March 2025 - june 2025",
+    date: "March 2025 - May 2025",
     contents: [
       "During my time at CSSEdTech, I contributed as a full-stack developer with a major focus on frontend development using React.js and backend development using Node.js/Express.js. The role gave me the opportunity to deliver end-to-end features used by real customers in production.",
 
@@ -181,18 +214,7 @@ export const experiences = [
       "Ensured clean, test-driven, and maintainable code, receiving over 90% positive feedback in code reviews for adherence to best practices and high readability.",
     ],
   },
-  {
-    title: "Software Developer Engineer Intern",
-    job: "Docmize- solutions Pvt. Ltd ",
-    date: "May 2025 - Aug 2025",
-    contents: [
-      "Built scalable MERN applications for handling large-scale data ingestion and real-time analysis, ensuring efficient processing and storage in MongoDB.",
-      "Developed backend services with Node.js & Express.js to enable seamless client-to-server communication for data exchange and system control.",
-      "✅ Designed and integrated secure REST APIs with JWT authentication and role-based access, ensuring reliability and compliance",
-      "✅ Ensured data privacy for customers and partners through industry-compliant protocols.",
-      "✅ Enhanced frontend performance in React.js by reducing load times by 35% using lazy loading, code splitting, and caching strategies.",
-    ],
-  },
+
   {
     title: "Freelance Developer",
     job: "Self-Employed",
