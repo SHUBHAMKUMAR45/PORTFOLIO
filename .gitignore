@@ -25,3 +25,10 @@ dist-ssr
 
 # env
 .env
+.vercel
+
+# IDEs and Agents
+.agents/
+.claude/
+.trae/
+.qodo/

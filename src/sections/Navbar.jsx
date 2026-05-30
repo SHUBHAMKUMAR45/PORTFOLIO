@@ -23,15 +23,16 @@ const Navbar = () => {
     <header className="fixed top-0 left-0 right-0 z-50 bg-black/90">
       <div className="mx-auto max-w-7xl">
         <div className="flex items-center justify-between py-5 mx-auto c-space">
-          <a href="/" className="text-xl font-bold transition-colors text-neutral-400 hover:text-white">
-            SHUBH
+          <a href="/" className="text-xl font-bold font-orbitron transition-colors text-cyber-blue hover:text-cyber-pink">
+            SHUBHAM
           </a>
 
           <button
+            type="button"
             onClick={toggleMenu}
             className="flex text-neutral-400 hover:text-white focus:outline-none sm:hidden"
             aria-label="Toggle menu">
-            <img src={isOpen ? 'assets/close.svg' : 'assets/menu.svg'} alt="toggle" className="w-6 h-6" />
+            <img src={isOpen ? 'assets/close.svg' : 'assets/menu.svg'} alt="toggle" className="size-6" />
           </button>
 
           <nav className="hidden sm:flex">

@@ -7,18 +7,17 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "doctor": "npx react-doctor@latest"
   },
   "dependencies": {
-    "@emailjs/browser": "^4.4.1",
+    "nodemailer": "^6.9.13",
     "@gsap/react": "^2.1.1",
     "@react-three/drei": "^9.111.3",
     "@react-three/fiber": "^8.17.6",
     "@types/three": "^0.168.0",
-    "dotenv": "^16.4.5",
     "framer-motion": "^12.23.12",
     "gsap": "^3.12.5",
-    "leva": "^0.9.35",
     "maath": "^0.10.8",
     "prettier": "^3.3.3",
     "react": "^18.3.1",
@@ -41,6 +40,7 @@
     "eslint-plugin-react-refresh": "^0.4.9",
     "globals": "^15.9.0",
     "postcss": "^8.4.41",
+    "react-doctor": "^0.2.11",
     "tailwindcss": "^3.4.10",
     "vite": "^5.4.1"
   }

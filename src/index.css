@@ -9,8 +9,10 @@
 }
 
 body {
-  background: #010103;
-  font-family: 'General Sans', sans-serif;
+  background: #030308;
+  font-family: 'Space Grotesk', sans-serif;
+  color: #f8f9fa;
+  overflow-x: hidden;
 }
 
 @layer utilities {
@@ -39,7 +41,45 @@ body {
   }
 
   .text-gray_gradient {
-    @apply bg-gradient-to-r from-[#BEC1CF] from-60% via-[#D5D8EA] via-60% to-[#D5D8EA] to-100% bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-cyber-blue via-cyber-purple to-cyber-pink bg-clip-text text-transparent;
+  }
+
+  .text-cyber-gradient {
+    @apply bg-gradient-to-r from-cyber-blue via-cyber-purple to-cyber-pink bg-clip-text text-transparent;
+  }
+  
+  .text-cyber-gradient-alt {
+    @apply bg-gradient-to-r from-cyber-pink via-cyber-purple to-cyber-blue bg-clip-text text-transparent;
+  }
+
+  .cyber-glow {
+    box-shadow: 0 0 15px rgba(0, 240, 255, 0.15), 0 0 3px rgba(189, 0, 255, 0.15);
+  }
+
+  .cyber-glow-pink {
+    box-shadow: 0 0 15px rgba(255, 0, 127, 0.2), 0 0 3px rgba(189, 0, 255, 0.2);
+  }
+
+  .neon-border {
+    border: 1px solid rgba(0, 240, 255, 0.3);
+  }
+
+  .neon-border-pink {
+    border: 1px solid rgba(255, 0, 127, 0.3);
+  }
+
+  .neon-border-purple {
+    border: 1px solid rgba(189, 0, 255, 0.3);
+  }
+  
+  .tech-card-glow {
+    transition: all 0.3s ease;
+  }
+  
+  .tech-card-glow:hover {
+    box-shadow: 0 0 25px rgba(0, 240, 255, 0.25);
+    border-color: rgba(0, 240, 255, 0.6);
+    transform: translateY(-5px);
   }
 
   /* button component */
@@ -194,4 +234,30 @@ body {
   100% {
     transform: rotate(0deg);
   }
+}
+
+@keyframes typing-dot {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+}
+
+.animate-typing-dot {
+  animation: typing-dot 0.8s cubic-bezier(0.16, 1, 0.3, 1) infinite;
+}
+
+@keyframes float-badge {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-3px);
+  }
+}
+
+.animate-float-badge {
+  animation: float-badge 2s cubic-bezier(0.16, 1, 0.3, 1) infinite;
 }

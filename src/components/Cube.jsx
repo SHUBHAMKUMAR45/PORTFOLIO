@@ -4,7 +4,7 @@
 
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
-import { useRef, useState } from 'react';
+import { useRef } from 'react';
 import { Float, useGLTF, useTexture } from '@react-three/drei';
 
 const Cube = ({ ...props }) => {
@@ -13,7 +13,7 @@ const Cube = ({ ...props }) => {
   const texture = useTexture('textures/cube.png');
 
   const cubeRef = useRef();
-  const [hovered, setHovered] = useState(false);
+  const hovered = useRef(false);
 
   useGSAP(() => {
     gsap
@@ -22,8 +22,8 @@ const Cube = ({ ...props }) => {
         repeatDelay: 0.5,
       })
       .to(cubeRef.current.rotation, {
-        y: hovered ? '+=2' : `+=${Math.PI * 2}`,
-        x: hovered ? '+=2' : `-=${Math.PI * 2}`,
+        y: hovered.current ? '+=2' : `+=${Math.PI * 2}`,
+        x: hovered.current ? '+=2' : `-=${Math.PI * 2}`,
         duration: 2.5,
         stagger: {
           each: 0.15,
@@ -40,7 +40,9 @@ const Cube = ({ ...props }) => {
           receiveShadow
           geometry={nodes.Cube.geometry}
           material={nodes.Cube.material}
-          onPointerEnter={() => setHovered(true)}>
+          onPointerEnter={() => { hovered.current = true; }}
+          onPointerLeave={() => { hovered.current = false; }}
+        >
           <meshMatcapMaterial matcap={texture} toneMapped={false} />
         </mesh>
       </group>

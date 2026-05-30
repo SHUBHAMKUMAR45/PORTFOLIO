@@ -11,10 +11,48 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import * as THREE from "three";
 
+// Circular Mask Component
+const CircularMask = (maskProps) => (
+  <group {...maskProps}>
+    <PivotControls
+      offset={[0, 0, 1]}
+      activeAxes={[true, true, false]}
+      disableRotations
+      depthTest={false}
+    >
+      <mesh position={[0, 0, 1]}>
+        <ringGeometry args={[0.785, 0.85, 64]} />
+        <meshPhongMaterial color="black" />
+      </mesh>
+      <Mask id={1} position={[0, 0, 0.95]}>
+        <circleGeometry args={[0.8, 64]} />
+      </Mask>
+    </PivotControls>
+  </group>
+);
+
+// Box Component
+const Box = ({
+  args = [1, 4, 1],
+  radius = 0.05,
+  smoothness = 4,
+  color = "black",
+  ...boxProps
+}) => (
+  <RoundedBox
+    args={args}
+    radius={radius}
+    smoothness={smoothness}
+    {...boxProps}
+  >
+    <meshPhongMaterial color={color} />
+  </RoundedBox>
+);
+
 const Target = (props) => {
   const targetRef = useRef();
-  const [model, setModel] = useState(null);
-  const [error, setError] = useState(null);
+  const [model, setModel] = useState();
+  const [error, setError] = useState();
 
   // Mask functionality
   const stencil = useMask(1, false);
@@ -67,44 +105,6 @@ const Target = (props) => {
       });
     }
   });
-
-  // Circular Mask Component
-  const CircularMask = (maskProps) => (
-    <group {...maskProps}>
-      <PivotControls
-        offset={[0, 0, 1]}
-        activeAxes={[true, true, false]}
-        disableRotations
-        depthTest={false}
-      >
-        <mesh position={[0, 0, 1]}>
-          <ringGeometry args={[0.785, 0.85, 64]} />
-          <meshPhongMaterial color="black" />
-        </mesh>
-        <Mask id={1} position={[0, 0, 0.95]}>
-          <circleGeometry args={[0.8, 64]} />
-        </Mask>
-      </PivotControls>
-    </group>
-  );
-
-  // Box Component
-  const Box = ({
-    args = [1, 4, 1],
-    radius = 0.05,
-    smoothness = 4,
-    color = "black",
-    ...boxProps
-  }) => (
-    <RoundedBox
-      args={args}
-      radius={radius}
-      smoothness={smoothness}
-      {...boxProps}
-    >
-      <meshPhongMaterial color={color} />
-    </RoundedBox>
-  );
 
   if (error) {
     return (
