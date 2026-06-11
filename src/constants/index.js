@@ -37,7 +37,7 @@ export const myProjects = [
     desc: "A production-grade AI fashion platform delivering personalized outfit recommendations through a resilient multi-model AI architecture, wardrobe intelligence, and adaptive style profiling.",
     subdesc:
       "Built with Next.js 14, React Native, Express TypeScript, MongoDB, Clerk, Cloudinary, Gemini, OpenAI, and Replicate. Features AI fallback orchestration, quota management, zero-trust persistence verification, and AI-generated outfit visualization.",
-    href: "https://github.com/SHUBHAMKUMAR45",
+    href: "https://github.com/SHUBHAMKUMAR45/Atelier",
     texture: "/textures/project/atelier.mp4",
     spotlight: "/assets/spotlight1.png",
     category: "ai",
@@ -61,7 +61,7 @@ export const myProjects = [
     desc: "A production-grade autonomous RAG platform capable of evaluating, repairing, and improving its own retrieval and reasoning pipelines using specialized AI agents.",
     subdesc:
       "Built with FastAPI, PostgreSQL, Redis, FAISS, Whoosh, OpenAI, Prometheus, and Grafana. Implements planner, retriever, reranker, critic, reflection, and fixer agents with hybrid retrieval and self-healing workflows.",
-    href: "https://github.com/SHUBHAMKUMAR45",
+    href: "https://github.com/SHUBHAMKUMAR45/NeuroRAG",
     texture: "/textures/project/neurorag.mp4",
     spotlight: "/assets/spotlight2.png",
     category: "ai",
@@ -85,7 +85,7 @@ export const myProjects = [
     desc: "An AI-powered meeting intelligence platform that converts videos and recordings into searchable knowledge with transcription, summarization, action extraction, and conversational querying.",
     subdesc:
       "Built using Whisper, Sarvam AI, Mistral AI, LangChain, ChromaDB, Streamlit, and Sentence Transformers. Supports multilingual transcription, semantic search, RAG-powered chat, and meeting analytics.",
-    href: "https://github.com/SHUBHAMKUMAR45",
+    href: "https://github.com/SHUBHAMKUMAR45/VidAi",
     texture: "/textures/project/vidai.mp4",
     spotlight: "/assets/spotlight3.png",
     category: "ai",
@@ -109,7 +109,7 @@ export const myProjects = [
     desc: "An enterprise analytics platform that transforms SAP Order-to-Cash datasets into interactive graph intelligence and natural language business analytics.",
     subdesc:
       "Built with Node.js, SQLite, D3.js, and Gemini. Features graph-based business process tracing, NL-to-SQL generation, query guardrails, and operational intelligence workflows.",
-    href: "https://github.com/SHUBHAMKUMAR45",
+    href: "https://github.com/SHUBHAMKUMAR45/FDE",
     texture: "/textures/project/sap-o2c.mp4",
     spotlight: "/assets/spotlight4.png",
     category: "ai",
@@ -157,7 +157,7 @@ export const myProjects = [
     desc: "A cloud-native GitOps deployment platform automating Kubernetes application delivery through declarative infrastructure and continuous deployment pipelines.",
     subdesc:
       "Built using Kubernetes, Helm, ArgoCD, Docker, React, and GitHub Actions/Jenkins. Implements GitOps workflows, automated rollouts, deployment monitoring, and scalable cluster management.",
-    href: "https://github.com/SHUBHAMKUMAR45",
+    href: "https://github.com/SHUBHAMKUMAR45/-GitOps-CI-CD-with-ArgoCD-",
     texture: "/textures/project/gitops.mp4",
     spotlight: "/assets/spotlight1.png",
     category: "devops",
@@ -181,7 +181,7 @@ export const myProjects = [
     desc: "A production-grade financial ledger system implementing immutable double-entry accounting, transactional consistency, and secure monetary transfers.",
     subdesc:
       "Built with Node.js, Express, MongoDB, JWT, and Mongoose. Supports ACID transactions, idempotent payments, immutable ledgers, concurrency protection, and enterprise-grade security.",
-    href: "https://github.com/SHUBHAMKUMAR45",
+    href: "https://github.com/SHUBHAMKUMAR45/Backend-ledger",
     texture: "/textures/project/ledger.mp4",
     spotlight: "/assets/spotlight2.png",
     category: "backend",
@@ -325,7 +325,7 @@ export const myProjects = [
     desc: "A collection of deep learning projects covering image classification, regression modeling, and customer churn prediction using Artificial Neural Networks.",
     subdesc:
       "Built with TensorFlow, Keras, Scikit-learn, Pandas, NumPy, and Matplotlib. Includes MNIST digit recognition, admission prediction, and churn forecasting models.",
-    href: "https://github.com/SHUBHAMKUMAR45",
+    href: "https://github.com/SHUBHAMKUMAR45/ANN-project",
     texture: "/textures/project/ann.mp4",
     spotlight: "/assets/spotlight3.png",
     category: "mlds",
@@ -591,7 +591,7 @@ export const experiences = [
   {
     title: "AI Intern (Trainee)",
     job: "NIELIT Patna (MeitY, Govt. of India)",
-    date: "January 2026 - Present",
+    date: "January 2026 - June 2026",
     contents: [
       "Developing and implementing Machine Learning and Deep Learning solutions using Python, Scikit-learn, and TensorFlow to solve real-world analytical challenges.",
       "Spearheading the integration of Generative AI models (OpenAI & Google Gemini APIs) into existing full-stack architectures to enhance application intelligence.",
