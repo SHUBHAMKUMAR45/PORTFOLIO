@@ -367,6 +367,174 @@ export const myProjects = [
       latency: "<60ms"
     }
   },
+
+  {
+    title: "PR-Review-Agent — Multi-LLM Code Reviewer",
+    desc: "A high-performance GitHub Action that reviews pull requests using four parallel LLM specialists (Security, Quality, Tests, Docs) grounded in a per-PR hybrid retrieval index.",
+    subdesc:
+      "Built with Python 3.11, Mistral AI, FAISS, Whoosh, PyGithub, and GitHub Actions. Implements parallelized multi-specialist LLM evaluation, hybrid vector/keyword search, and automated PR commentary.",
+    href: "https://github.com/SHUBHAMKUMAR45/PR-Review-Agent",
+    texture: "/textures/project/neurorag.mp4",
+    spotlight: "/assets/spotlight1.png",
+    category: "ai",
+    tags: ["Python 3.11", "Mistral AI", "FAISS", "Whoosh", "GitHub Actions", "RAG Index"],
+    metrics: [
+      { label: "Parallel Review Speed", value: 95 },
+      { label: "RAG Retrieval Precision", value: 92 },
+      { label: "Security Defect Catch Rate", value: 90 },
+      { label: "Action Execution Time", value: 88 }
+    ],
+    specs: {
+      database: "FAISS + Whoosh Index",
+      hosting: "GitHub Actions Runner",
+      security: "PR Token Scoping",
+      latency: "<90ms"
+    }
+  },
+
+  {
+    title: "RefactorBuddy — Architectural Code Assistant",
+    desc: "A purpose-built architectural engine providing authoritative software critiques, structural pattern analysis, and high-performance refactoring recommendations.",
+    subdesc:
+      "Built with TypeScript, Node.js, AST Parsing, OpenAI/Gemini APIs, and Tailwind CSS. Delivers automated code anti-pattern detection, modular refactoring strategies, and technical debt reduction.",
+    href: "https://github.com/SHUBHAMKUMAR45/RefactorBuddy",
+    texture: "/textures/project/aicode.mp4",
+    spotlight: "/assets/spotlight2.png",
+    category: "ai",
+    tags: ["TypeScript", "Node.js", "AST", "OpenAI", "Gemini", "Tailwind CSS"],
+    metrics: [
+      { label: "Refactor Precision", value: 94 },
+      { label: "AST Parse Throughput", value: 96 },
+      { label: "Anti-pattern Detection", value: 91 },
+      { label: "Code Readability Gain", value: 89 }
+    ],
+    specs: {
+      database: "In-Memory AST Cache",
+      hosting: "Vercel / Node",
+      security: "Sanitized Code Sandbox",
+      latency: "<60ms"
+    }
+  },
+
+  {
+    title: "CUAD Contract Analyzer — Legal Document NLP Pipeline",
+    desc: "An AI-powered legal document analysis system that extracts critical termination, liability, and confidentiality clauses from commercial contracts using the CUAD dataset.",
+    subdesc:
+      "Built with Python, PyTorch, Hugging Face Transformers, Streamlit, and Spacy. Features clause extraction, legal risk scoring, contract term categorization, and interactive highlights.",
+    href: "https://github.com/SHUBHAMKUMAR45/CUAD-Contract-Analyzer",
+    texture: "/textures/project/vidai.mp4",
+    spotlight: "/assets/spotlight3.png",
+    category: "mlds",
+    tags: ["Python", "PyTorch", "Hugging Face", "NLP", "Streamlit", "Spacy"],
+    metrics: [
+      { label: "Clause Extraction F1", value: 91 },
+      { label: "Legal Term Detection", value: 88 },
+      { label: "Document Processing", value: 93 },
+      { label: "Precision Rate", value: 89 }
+    ],
+    specs: {
+      database: "Local Vector Store",
+      hosting: "Hugging Face Spaces",
+      security: "Data Isolation",
+      latency: "<140ms"
+    }
+  },
+
+  {
+    title: "Forever — Full-Stack E-Commerce Platform",
+    desc: "A full-featured e-commerce platform with persistent user cart state, multi-filter catalog, stripe payment integration, and administration dashboard.",
+    subdesc:
+      "Built with React.js, Node.js, Express, MongoDB, JWT Authentication, and Stripe API. Supports user session persistence across logins, cart management, and order fulfillment.",
+    href: "https://github.com/SHUBHAMKUMAR45/Forever",
+    texture: "/textures/project/ecomzyy.mp4",
+    spotlight: "/assets/spotlight4.png",
+    category: "fullstack",
+    tags: ["React.js", "Node.js", "Express", "MongoDB", "Stripe API", "JWT Auth"],
+    metrics: [
+      { label: "Cart State Persistence", value: 99 },
+      { label: "Checkout Flow Speed", value: 94 },
+      { label: "Catalog Query Performance", value: 92 },
+      { label: "Auth Token Integrity", value: 97 }
+    ],
+    specs: {
+      database: "MongoDB Atlas",
+      hosting: "Render / Vercel",
+      security: "JWT / Stripe SSL",
+      latency: "<45ms"
+    }
+  },
+
+  {
+    title: "Phool Basket — Mobile Seller Dashboard & API",
+    desc: "A mobile marketplace management application enabling flower vendors to track real-time orders, update product catalogs, and view sales analytics.",
+    subdesc:
+      "Built with React Native (Expo), Node.js, Express, and MongoDB. Includes responsive mobile UI, order state management, sales metrics, and real-time REST API synchronization.",
+    href: "https://github.com/SHUBHAMKUMAR45/phool-basket-seller-dashboard-",
+    texture: "/textures/project/shifly.mp4",
+    spotlight: "/assets/spotlight5.png",
+    category: "fullstack",
+    tags: ["React Native", "Expo", "Node.js", "Express", "MongoDB", "REST API"],
+    metrics: [
+      { label: "Mobile Render FPS", value: 96 },
+      { label: "Catalog Sync Speed", value: 93 },
+      { label: "Order Update Latency", value: 90 },
+      { label: "App Bundle Optimization", value: 88 }
+    ],
+    specs: {
+      database: "MongoDB Atlas",
+      hosting: "Vercel / Expo EAS",
+      security: "JWT Auth",
+      latency: "<50ms"
+    }
+  },
+
+  {
+    title: "Smart Expense Tracker — Analytics & Budgeting API",
+    desc: "A production RESTful backend service for automated expense tracking, category aggregation, date-range filtering, and monthly financial summary analytics.",
+    subdesc:
+      "Built with Node.js, Express.js, MongoDB, and Mongoose. Features aggregation pipelines, category breakdown calculations, monthly summary reports, and budget safety checks.",
+    href: "https://github.com/SHUBHAMKUMAR45/smart-expense-tracker-api",
+    texture: "/textures/project/ledger.mp4",
+    spotlight: "/assets/spotlight1.png",
+    category: "backend",
+    tags: ["Node.js", "Express.js", "MongoDB", "Mongoose", "REST API", "Finance API"],
+    metrics: [
+      { label: "Aggregation Speed", value: 97 },
+      { label: "API Query Throughput", value: 95 },
+      { label: "Data Calculation Accuracy", value: 99 },
+      { label: "Schema Strictness", value: 94 }
+    ],
+    specs: {
+      database: "MongoDB Atlas",
+      hosting: "Render",
+      security: "Express Guard",
+      latency: "<30ms"
+    }
+  },
+
+  {
+    title: "Elite-IELTS — AI Learning & Test Platform",
+    desc: "An interactive IELTS preparation platform featuring simulated practice tests, instant AI feedback on writing modules, and performance analytics.",
+    subdesc:
+      "Built with Next.js 14, TypeScript, Tailwind CSS, Supabase, and OpenAI API. Delivers automated score estimations, detailed grammar critiques, and module tracking.",
+    href: "https://github.com/SHUBHAMKUMAR45/Elite-IELTS",
+    texture: "/textures/project/clibwise.mp4",
+    spotlight: "/assets/spotlight2.png",
+    category: "fullstack",
+    tags: ["Next.js 14", "TypeScript", "Supabase", "OpenAI", "Tailwind CSS"],
+    metrics: [
+      { label: "Writing Scoring Accuracy", value: 90 },
+      { label: "Practice Exam Latency", value: 94 },
+      { label: "User Analytics Sync", value: 92 },
+      { label: "Interface Responsiveness", value: 96 }
+    ],
+    specs: {
+      database: "Supabase PostgreSQL",
+      hosting: "Vercel",
+      security: "Supabase Auth",
+      latency: "<60ms"
+    }
+  },
 ];
 
 export const archiveProjects = [
@@ -583,6 +751,30 @@ export const archiveProjects = [
       hosting: "Render",
       security: "Bcrypt & Sessions",
       latency: "<90ms"
+    }
+  },
+
+  {
+    title: "react-toast-msg — Open-Source NPM Library",
+    desc: "A lightweight, zero-config, highly customizable toast notification library for React applications published on NPM.",
+    subdesc:
+      "Built with React, TypeScript, and CSS Animations. Offers a plug-and-play API, queue management, customizable themes, and zero external dependencies.",
+    href: "https://github.com/SHUBHAMKUMAR45/react-toast-msg",
+    texture: "/textures/project/CODEDECK.mp4",
+    spotlight: "/assets/spotlight3.png",
+    category: "frontend",
+    tags: ["React", "TypeScript", "NPM Package", "CSS Modules", "Open Source"],
+    metrics: [
+      { label: "Bundle Size Efficiency", value: 99 },
+      { label: "Zero-Dependency Score", value: 100 },
+      { label: "Animation Framerate", value: 98 },
+      { label: "Developer Experience", value: 95 }
+    ],
+    specs: {
+      database: "N/A (NPM Package)",
+      hosting: "NPM Registry",
+      security: "Zero-Dependency",
+      latency: "<2ms"
     }
   },
 ];
